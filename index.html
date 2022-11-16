@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        Nobel Peace Prize on Your Birth Year.
+    </header>
+    <div id="wrapper">
+        <form>
+            <p>Enter birth year:</p>
+            <input type="number" id="year" min="1901" max="2022" required/>
+            <button type="button" onclick="renderWinners()">Submit</button>
+            <button type="button" onclick="testWinners()">Test </button>
+        </form>
+        <div id="display"></div>
+        <div id="testDisplay"></div>
+    </div>    
+  <script src="script.js"></script>
+  <script src="test.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
