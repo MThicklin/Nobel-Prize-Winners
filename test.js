@@ -9,7 +9,7 @@ async function testWinners() {
         let container = document.createElement("div");
         container.className = "winner";
         for (y in result.laureates[x].nobelPrizes) {
-            container.innerHTML = result.laureates[x].fullName.en + ' - ' + <result.laureates[x].nobelPrizes[y] + ' - <a href=' + result.laureates[x].wikipedia.english + '>Wikipedia</a>';
+            container.innerHTML = result.laureates[x].fullName.en + ' - <a href=' + result.laureates[x].wikipedia.english + '>Wikipedia</a>';
         document.getElementById("testDisplay").appendChild(container);
         }
     }
