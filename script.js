@@ -14,7 +14,7 @@ async function renderWinners() {
     let winners = await getNPPWinners();
     console.log(winners.laureates)
     winnerCount = winners.laureates.length;
-    document.getElementById("display").innerHTML = "In " + document.getElementById("year").value + " there were " + winnerCount +  "winners";
+    document.getElementById("display").innerHTML = "In " + document.getElementById("year").value + " there were " + winnerCount +  " winners";
     for (x in winners.laureates) {
         let container = document.createElement("div");
         container.className = "winner";
